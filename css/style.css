@@ -204,6 +204,13 @@ body {
     width: 40%;
     background: url('images/earphones.png');
   }
+  #main-heading {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .comment {
+  font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 800px) {
