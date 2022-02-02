@@ -1,6 +1,6 @@
 # Tunestack
 
-## Huge fan of music so made a page, named it Tunestack... a onepager inspired by spotify.
+## Huge fan of music so made a page, named it Tunestack... a onepager inspired by Spotify.
 
 ### Used pure HTML, CSS and Bootstrap...
 
