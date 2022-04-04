@@ -224,6 +224,7 @@ body {
   text-align: center;
   position: relative;
 }
+
 #bottom-buttons {
   padding-top: 2%;
   text-align: center;
@@ -232,6 +233,11 @@ body {
 .footer-icon {
   padding: 5px;
 }
+
+.footer-icon:hover {
+  color: white
+}
+
 #footer p {
   padding-top: 2%;
 }
