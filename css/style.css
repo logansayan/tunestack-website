@@ -28,7 +28,7 @@ body {
   font-size: 3rem;
   line-height: 4rem;
   margin-left: 2%;
-  animation: kill-blur 2s forwards;
+  animation: kill-blur 0.5s ease-out forwards 0.75s;
 }
 
 @keyframes kill-blur {
@@ -58,9 +58,22 @@ body {
 
 #top-buttons {
   margin-left: 2%;
+  animation-name: moveInTop;
+  animation-duration: 1s;
+  animation-timing-function: ease-out ;
 }
 
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 
 
 /* NAVBAR */
@@ -271,6 +284,10 @@ body {
 @media (max-width: 800px) {
   #main-img{
     display: none;
+  }
+
+  #top-buttons {
+    animation: none;
   }
 }
 
