@@ -48,8 +48,33 @@ body {
 
 #main-img {
   position: absolute;
-  bottom: -25%;
   top: 15%;
+  z-index: 1;
+}
+
+
+#tune-img {
+  position: absolute;
+  width: 350px;
+  top: 10%;
+  right: 5%;
+  animation: img-blur 1.5s ease backwards;
+}
+
+@keyframes img-blur {
+  0% {
+    filter: blur(5px);
+    transform: translateY(50%);
+  }
+
+  80% {
+    transform: translateY(-3%);
+  }
+
+  100% {
+    filter: none;
+    transform: translate(0);
+  }
 }
 
 #apple-icon {
@@ -67,6 +92,11 @@ body {
   0% {
     opacity: 0;
     transform: translateY(30px);
+  }
+
+  80% {
+    opacity: 0.8;
+    transform: translateY(-10px);
   }
 
   100% {
@@ -104,6 +134,7 @@ body {
   padding-top: 7%;
   padding-bottom: 7%;
   position: relative;
+  z-index: 2;
 }
 
 .heading {
@@ -272,6 +303,11 @@ body {
     width: 40%;
     background: url('images/earphones.png');
   }
+
+  #tune-img {
+    display: none;
+  }
+
   #main-heading {
     font-size: 2rem;
     line-height: 3rem;
