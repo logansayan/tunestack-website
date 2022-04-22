@@ -294,6 +294,12 @@ body {
 
 /* MEDIA QUERIES */
 
+@media all and (max-width: 1400px) {
+  #tune-img {
+    display: none;
+  }
+}
+
 @media all and (max-width: 991px) {
 
   #title {
@@ -302,11 +308,13 @@ body {
   #main-img {
     position: static;
     width: 40%;
-    background: url('images/earphones.png');
+    display: none;
   }
 
   #tune-img {
-    display: none;
+    position: static;
+    display: block;
+    margin: 0 auto;
   }
 
   #main-heading {
@@ -319,7 +327,7 @@ body {
 }
 
 @media (max-width: 800px) {
-  #main-img{
+  #tune-img{
     display: none;
   }
 
