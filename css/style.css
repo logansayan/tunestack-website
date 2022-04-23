@@ -88,6 +88,14 @@ body {
   animation-timing-function: ease-out ;
 }
 
+.app-store-btn {
+  animation: moveInTop 1s ease-out;
+}
+
+.play-store-btn {
+  animation: moveInTop 1.1s ease-out;
+}
+
 @keyframes moveInTop {
   0% {
     opacity: 0;
