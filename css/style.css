@@ -31,6 +31,10 @@ body {
   animation: kill-blur 0.5s ease-out forwards 0.75s;
 }
 
+#brand-logo {
+  width: 2rem;
+}
+
 @keyframes kill-blur {
   to {
     color: white;
@@ -50,6 +54,8 @@ body {
   position: absolute;
   top: 15%;
   z-index: 1;
+  backface-visibility: hidden;
+  overflow: hidden;
 }
 
 
@@ -58,6 +64,8 @@ body {
   width: 350px;
   top: 10%;
   right: 5%;
+  backface-visibility: hidden;
+  overflow: hidden;
   animation: img-blur 1.5s ease backwards;
 }
 
@@ -212,20 +220,43 @@ body {
 }
 
 /* PRICING SECTION */
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden;
+}
+
+#video-content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
 #pricing {
   text-align: center;
   padding-top: 3%;
   position: relative;
-  background-color: white;
+}
+
+#pricing h2 {
+  font-weight: 600;
 }
 
 .all-pricings {
   text-align: -webkit-center;
   padding: 3%;
+  font-weight: 600;
 }
 .price-item {
   padding-bottom: 3%;
+}
+.card-title {
+  font-weight: 600;
 }
 
 /* CALL TO ACTION SECTION */
