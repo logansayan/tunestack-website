@@ -176,12 +176,18 @@ body {
   color: #F58840;
 }
 
+/* BACKGROUND-VIDEO SETTING */
+
+.testimonial-press {
+  position: relative;
+  background-color: #f5884091;
+}
+
 
 /* TESTIMONIAL SECTION */
 
 #testimonials {
   text-align: center;
-  background-color: #F58840;
   color: white;
   position: relative;
   z-index: 2;
@@ -208,7 +214,6 @@ body {
 /* PRESS SECTION */
 
 #press {
-  background-color: #F58840;
   text-align: center;
   padding-bottom: 5%;
   position: relative;
