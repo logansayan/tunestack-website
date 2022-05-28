@@ -17,7 +17,8 @@ body {
 /* TITLE SECTION */
 
 #title {
-  background-color: #F58840/*#ff4c68*/
+  background-color: #F58840;
+  padding: 3rem 0;
 }
 
 #main-heading {
